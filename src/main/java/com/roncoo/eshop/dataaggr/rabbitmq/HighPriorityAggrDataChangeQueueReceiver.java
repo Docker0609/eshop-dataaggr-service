@@ -11,8 +11,8 @@ import redis.clients.jedis.JedisPool;
 import com.alibaba.fastjson.JSONObject;
 
 @Component  
-@RabbitListener(queues = "aggr-data-change-queue")  
-public class AggrDataChangeQueueReceiver {  
+@RabbitListener(queues = "high-priority-aggr-data-change-queue")  
+public class HighPriorityAggrDataChangeQueueReceiver {  
 	
 	@Autowired
 	private JedisPool jedisPool;
