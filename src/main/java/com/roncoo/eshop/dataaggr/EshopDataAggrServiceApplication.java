@@ -25,7 +25,7 @@ public class EshopDataAggrServiceApplication {
 		config.setMaxIdle(5);
 		config.setMaxWaitMillis(1000 * 10); 
 		config.setTestOnBorrow(true);
-		return new JedisPool(config, "localhost", 6379);
+		return new JedisPool(config, "192.168.31.103", 1112);
 	}
 	
 	
